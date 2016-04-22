@@ -1,4 +1,5 @@
 var async = require('async')
+var AsyncArgs = require('async-args')
 var getConfig = require('./lib/getConfig')
 var getCommand = require('./lib/getCommand')
 var exec = require('child_process').exec
@@ -55,6 +56,7 @@ function mvnDeployFile (args, options, next) {
     glob,
     checkAndStoreFilePath.bind(null, context),
     getCommand.bind(null, ['mvn', '-e', 'deploy:deploy-file']),
+    AsyncArgs.appendConstants({maxBuffer: 1024 * 5000}),
     exec,
     getUrl
   ], next)

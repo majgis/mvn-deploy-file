@@ -28,7 +28,8 @@
     "glob": "^6.0.2",
     "jsonfile": "^2.2.3",
     "minimist": "^1.2.0",
-    "osenv": "^0.1.3"
+    "osenv": "^0.1.3",
+    "async-args": "~1.4.3"
   },
   "bin": {
     "mvn-deploy-file": "bin/mvn-deploy-file.js"
