@@ -1,6 +1,6 @@
 {
   "name": "mvn-deploy-file",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A wrapper for mvn deploy:deploy-file for quickly pushing files to a Nexus repository.",
   "main": "index.js",
   "scripts": {
